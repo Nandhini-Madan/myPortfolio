@@ -46,3 +46,33 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+
+.App {
+  text-align: center;
+}
+body{
+  background-image:linear-gradient(orange,white);
+  background-attachment: fixed;
+}
+.container{
+  padding-top: 50px;
+  
+}
+.row{
+  height: 90vh;
+}
+.app_sidebar{
+  background-color: red;
+  height: 100%;
+  border-radius: 20px;
+  padding:25px 15px;
+  box-shadow: 0 0 10px black;
+
+}
+.app_main{
+  background-color: royalblue;
+  border-radius: 20px;
+  padding:25px 15px;
+  box-shadow: 0 0 10px black;
+}
