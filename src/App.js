@@ -2,19 +2,15 @@ import './App.css';
 import react from 'react';
 import Sidebar from './components/Sidebar'
 import Navigation from './components/Navigation' 
+import { Layout } from 'antd';
 
+const { Header, Footer, Sider, Content } = Layout;
 function App() {
   return (
   <div className="App">
+     <Sidebar/> 
     <div className="container">
-      <div className="row">
-        <div className="col-lg-3">
-          <Sidebar/>
-        </div>
-        <div className="col-lg-9 app_main">
-        <Navigation/>
-        </div>
-      </div>
+   <Navigation/>
     </div>
   </div>
   );
