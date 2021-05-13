@@ -1,0 +1,15 @@
+span a {
+    color:black;
+    text-decoration: none;
+
+}
+.icon{
+    display: flex;
+    justify-content: space-evenly;
+}
+.Menu_icon{
+    padding-left: 10px;
+}
+.hire_me{
+margin-left: 7%;
+}

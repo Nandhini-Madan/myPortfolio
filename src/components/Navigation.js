@@ -6,13 +6,7 @@ import {Route,Switch,Link} from 'react-router-dom'
 
 const Navigation=()=>{
 return(
-   <div>
-      <div className="nav_link">
-      <div><Link to="/">About</Link></div>
-      <div><Link to="/Resume">Resume</Link></div>
-      <div><Link to="/Projects">Projects</Link></div>
-     </div>
-     
+   <div className="sidebar">     
        <Switch>
         <Route exact path='/'>
         <About/>

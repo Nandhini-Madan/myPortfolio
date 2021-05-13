@@ -48,77 +48,8 @@ table {
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
 
-.App {
-  text-align: center;
+.ant-layout-sider-children{
+  width: auto;
+  background-color: teal;
 }
-body{
-  background-image:linear-gradient(orange,white);
-  background-attachment: fixed;
-}
-.container{
-  padding-top: 50px;
-  
-}
-.row{
-  height: 90vh;
-}
-.sidebar{
-  background-color: red;
-  height: 100%;
-  border-radius: 20px;
-  padding:25px 15px;
-  box-shadow: 0 0 10px black;
 
-}
-.app_main{
-  background-color: royalblue;
-  border-radius: 20px;
-  padding:25px 15px;
-  box-shadow: 0 0 10px black;
-}
-.sidebar_avatar{
-  height: 110px;
-  width: 120px;
-  object-fit: contain;
-  border-radius: 30px;
-}
-.sidebar_name{
-  font-family: Roboto;
-  margin:20px 0
-}
-.sidebar_icon{
-  height: 25px;
-  width: 25px;
-}
-.sidebar_name>span{
-  color:green;
-}
-.sidebar_item{
-  margin-bottom: 6px;
-  padding-top: 6px;
-  height: 40px;
-  font-size: 1.05rem;
-}
-.sidebar_title{
-  background-color: white;
-  border-radius: 30px;
-}
-a{
-  text-decoration: none;
-  color:blueviolet;
-}
-a:hover{
-  text-decoration: none;
-  color:black;
-}
-.sidebar_contact{
-background-color: wheat;
-padding:2px 0;
-}
-.sidebar_nav{
-  padding-top: 20px;
-}
-.nav_link{
-  padding:10px;
-  
-}
