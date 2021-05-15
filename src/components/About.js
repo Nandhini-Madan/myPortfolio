@@ -1,10 +1,68 @@
-import React from 'react'
+import React from 'react';
+import { Space, Typography } from 'antd';
+import {Link} from "react-router-dom";
+import { Button,Card } from 'antd';
+import "../components/About.css";
+import 'antd/dist/antd.css';
+
+const { Title ,Paragraph} = Typography;
+const { Meta } = Card;
 
 const About=()=>{
 return(
    <div >
-      <h1>About</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et posuere massa, eu eleifend risus. Phasellus dapibus felis in dolor ultricies scelerisque. Cras malesuada gravida tellus. Curabitur porttitor ipsum libero, id euismod lorem scelerisque ac. Aliquam iaculis urna lectus, pretium vulputate mi suscipit eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In eleifend consectetur nisi vitae egestas. Pellentesque mattis elementum nunc, in pellentesque dolor imperdiet sit amet. Duis ultricies posuere arcu id interdum. Integer a lectus auctor, facilisis augue ut, bibendum tellus. Vivamus vestibulum, mauris id tincidunt accumsan, metus velit suscipit diam, sollicitudin interdum dui nisl quis nisi. Etiam mollis nulla neque, ac molestie nibh ornare in. Nunc pellentesque augue neque, et tempor felis tempor at.</p>
+      <Title className="tittle">About Me</Title>
+      <Paragraph>Hi, I am a Full Stack Web Developer with hands-on experience in designing, developing, and implementing applications and solutions using a range of technologies and programming languages.
+         Want to know how I may help your project? Check out my <Link to="/Project">project</Link> portfolio and <Link to="/Resume">online resume</Link>.</Paragraph>
+<br></br>
+<br></br>
+<Space>
+<Button type="primary">Project</Button>
+<Button type="primary">View Resume</Button>
+</Space>
+
+
+<br></br>
+<br></br>
+<hr></hr>
+<br></br>
+<Title level={2} className="tittle">Skills</Title>
+<Paragraph></Paragraph>
+<br></br>
+<br></br>
+<hr></hr>
+<Title level={2}>Featured Project</Title>
+<div className="projectContainer">
+<Card
+    hoverable
+    style={{ width: 240 }}
+    cover={<img className="projectImage" alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+  >
+    <Meta title="Merchant Marketplace" description="" />
+  </Card>
+
+  <Card
+    hoverable
+    style={{ width: 240 }}
+    cover={<img className="projectImage" alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+  >
+    <Meta title="Europe Street beat" description="www.instagram.com" />
+  </Card>
+  <Card
+    hoverable
+    style={{ width: 240 }}
+    cover={<img className="projectImage" alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+  >
+    <Meta title="Europe Street beat" description="www.instagram.com" />
+  </Card>
+  <Card
+    hoverable
+    style={{ width: 240 }}
+    cover={<img className="projectImage" alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+  >
+    <Meta title="Europe Street beat" description="www.instagram.com" />
+  </Card>
+  </div>
    </div>
    
 )

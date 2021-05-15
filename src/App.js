@@ -12,7 +12,7 @@ function App() {
       <Layout>
         <Header>Header</Header>
         <Content><Navigation/></Content>
-        <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+        <Footer style={{ textAlign: 'center' }}> ©2018 Created by Nandhini Madan</Footer>
       </Layout>
     </Layout>
   );

@@ -1,0 +1,16 @@
+.ant-typography {
+    text-align: center;
+}
+.Primary_button{
+    display: flex;
+    justify-content: space-evenly;
+}
+.projectImage{
+    width:200px;
+    height: 200px;
+}
+.projectContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
