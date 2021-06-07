@@ -3,9 +3,14 @@ span a {
     text-decoration: none;
 
 }
-.icon{
+.icon_container{
     display: flex;
     justify-content: space-evenly;
+}
+.icons{
+    width:30px;
+    height:30px;
+    background-color: white;
 }
 .Menu_icon{
     padding-left: 10px;
@@ -19,4 +24,8 @@ margin-left: 7%;
 }
 .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
     background-color: #1890ff;
+}
+
+.ant-layout-sider-children{
+    width:fit-content;
 }

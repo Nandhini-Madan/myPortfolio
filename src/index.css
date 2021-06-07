@@ -50,6 +50,16 @@ table {
 
 .ant-layout-sider-children{
   width: auto;
-  background-color: teal;
+  
+}
+.ant-layout-sider{
+	background: teal;
 }
 
+.ant-layout-sider .ant-layout-sider-dark .slider{
+	background: teal;
+}
+
+ aside .slider{
+	background: teal;
+}

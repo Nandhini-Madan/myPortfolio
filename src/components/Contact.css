@@ -1,0 +1,17 @@
+.form{
+    display: flex;
+    justify-content:center;
+    width: inherit;
+}
+.Contact_title
+{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+.ant-space-vertical{
+    display: flex;
+}

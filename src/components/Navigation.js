@@ -1,8 +1,10 @@
 import React from 'react'
 import About from './About'
 import Projects from './Projects'
-import Resume from './Resume'
-import {Route,Switch,Link} from 'react-router-dom'
+import Resume from './Resume';
+import Blog from './Blog';
+import Contact from './Contact';
+import {Route,Switch} from 'react-router-dom'
 
 const Navigation=()=>{
 return(
@@ -16,6 +18,12 @@ return(
         </Route>
         <Route path='/Projects'>
         <Projects/>
+        </Route>
+        <Route path='/Blog'>
+        <Blog/>
+        </Route>
+        <Route path='/Contact'>
+        <Contact/>
         </Route>
        </Switch>
    </div> 

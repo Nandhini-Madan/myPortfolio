@@ -9,10 +9,17 @@ function App() {
   return (
     <Layout className="App">
       <Sider className="slider"><Sidebar/></Sider>
-      <Layout>
-        <Header>Header</Header>
+      <Layout> 
         <Content><Navigation/></Content>
-        <Footer style={{ textAlign: 'center' }}> ©2018 Created by Nandhini Madan</Footer>
+        <Footer className="Footer">
+        <div>
+         <p>&copy;{(new Date().getFullYear())} Nandhini Madan | All rights reserved | Terms Of Service | Privacy</p>
+         </div>
+          <div className="legal__links">
+             <span>Made with <span className="heart">♥</span> Nandhini Madan</span>
+           </div>
+ 
+         </Footer>
       </Layout>
     </Layout>
   );
