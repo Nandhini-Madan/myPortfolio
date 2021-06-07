@@ -4,11 +4,17 @@
 }
 
 .slider{
-    padding-right: 20px;
+    
     width:100%;
+    background: teal;
 }
 .ant-layout-sider-children {
     width: fit-content;
     background-color: teal;
     height: 100%;
+}
+
+.ant-layout-sider{
+    background: teal;
+   
 }

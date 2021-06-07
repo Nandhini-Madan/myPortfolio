@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Input, Button } from 'antd';
+import { Form, Input, Button,Space } from 'antd';
 import "../components/Contact.css";
 const layout = {
   labelCol: {
@@ -32,9 +32,10 @@ const Contact=()=>{
       };
 return(
   <>
-  <h1>Get IN Touch</h1>
+  <Space direction="vertical" size="large">
+  
+  <div className="Contact_title" >Get IN Touch</div>
     <div className="form">
-    
      <Form {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>
       <Form.Item
         name={['user', 'name']}
@@ -71,6 +72,7 @@ return(
       </Form.Item>
     </Form>
     </div>
+    </Space>
     </>
 )
 }

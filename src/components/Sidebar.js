@@ -4,7 +4,7 @@ import About from "../components/About"
 import Navigation from "../components/Navigation"
 import { Route, Switch, Link } from 'react-router-dom'
 import { Typography, Menu, Button } from 'antd';
-import { Avatar, Image,Space } from 'antd';
+import { Avatar, Image, Space } from 'antd';
 import {
     MenuUnfoldOutlined,
     MenuFoldOutlined,
@@ -17,24 +17,28 @@ import {
     MailFilled,
     UpSquareOutlined
 } from '@ant-design/icons';
+import LinkedIn from "../assets/linkedin.png";
 import '../components/Sidebar.css';
 const { Title } = Typography;
 
 
 const Sidebar = () => {
     return (
-        <div>
-            
+        <div className="sideBar_container">
+            <Avatar
+                size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}/>
             <Title level={2}>Nandhini Devi Madan</Title>
-            <Avatar size={3}  />
             <Title level={4}>Full Stack Developer</Title>
+
+            <div className="icon_container">
+                <a href="https://www.linkedin.com/in/nandhinimadan/">
+                <img className="icons"src={LinkedIn}/>
+                </a>
            
-           <div className="icon">
-            <LinkedinOutlined />
-            <TwitterOutlined />
-            <GithubOutlined />
-            <MailFilled />
-           </div>
+            <img className="icons"src={LinkedIn}/>
+            <img className="icons"src={LinkedIn}/>
+            <img className="icons"src={LinkedIn}/>  
+            </div>
             <br></br>
             <hr></hr>
             <Space size={'Large'}>
@@ -42,7 +46,7 @@ const Sidebar = () => {
                     <Menu.Item key="1" icon={<UserOutlined />} >
                         <Link to="/" className="Menu_icon">About Me</Link>
                     </Menu.Item>
-                    <Menu.Item key="2" icon={<VideoCameraOutlined />}>
+                    <Menu.Item key="2" icon={<MenuFoldOutlined />}>
                         <Link to="/Resume" className="Menu_icon">Resume</Link>
                     </Menu.Item>
                     <Menu.Item key="3" icon={<UploadOutlined />}>
@@ -51,7 +55,7 @@ const Sidebar = () => {
                     <Menu.Item key="4" icon={<UploadOutlined />}>
                         <Link to="/Blog" className="Menu_icon">Blog</Link>
                     </Menu.Item>
-                    <Menu.Item key="5" icon={<UploadOutlined />}>
+                    <Menu.Item key="5" icon={<MailFilled />}>
                         <Link to="/Contact" className="Menu_icon">Contact</Link>
                     </Menu.Item>
                     <br></br>
