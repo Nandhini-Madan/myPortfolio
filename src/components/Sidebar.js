@@ -1,19 +1,14 @@
 import React from 'react'
-import img from '../assets/facebook.svg'
-import About from "../components/About"
-import Navigation from "../components/Navigation"
-import { Route, Switch, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Typography, Menu, Button } from 'antd';
-import { Avatar, Image, Space } from 'antd';
+import { Avatar, Space } from 'antd';
 import {
-    MenuUnfoldOutlined,
+   
     MenuFoldOutlined,
     UserOutlined,
-    VideoCameraOutlined,
+   
     UploadOutlined,
-    LinkedinOutlined,
-    TwitterOutlined,
-    GithubOutlined,
+ 
     MailFilled,
     UpSquareOutlined
 } from '@ant-design/icons';
@@ -32,12 +27,18 @@ const Sidebar = () => {
 
             <div className="icon_container">
                 <a href="https://www.linkedin.com/in/nandhinimadan/">
-                <img className="icons"src={LinkedIn}/>
+                <img className="icons"src={LinkedIn} alt="LinkedIn"/>
                 </a>
            
-            <img className="icons"src={LinkedIn}/>
-            <img className="icons"src={LinkedIn}/>
-            <img className="icons"src={LinkedIn}/>  
+                <a href="https://www.linkedin.com/in/nandhinimadan/">
+                <img className="icons"src={LinkedIn} alt="LinkedIn"/>
+                </a>
+                <a href="https://www.linkedin.com/in/nandhinimadan/">
+                <img className="icons"src={LinkedIn} alt="LinkedIn"/>
+                </a>
+                <a href="https://www.linkedin.com/in/nandhinimadan/">
+                <img className="icons"src={LinkedIn} alt="LinkedIn"/>
+                </a>  
             </div>
             <br></br>
             <hr></hr>
