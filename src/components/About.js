@@ -44,9 +44,9 @@ return(
 <Paragraph></Paragraph>
   <div className="icon_container">
     <img className="icons" src={reactPic} alt=""/>
-    <img className="icons" src={reactPic}/>
-    <img className="icons" src={reactPic}/>
-    <img className="icons" src={reactPic}/>  
+    <img className="icons" src={reactPic} alt=""/>
+    <img className="icons" src={reactPic} alt=""/>
+    <img className="icons" src={reactPic} alt=""/>  
   </div>
 <br></br>
 <br></br>
