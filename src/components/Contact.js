@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Input, Button,Space } from 'antd';
+import { Form, Input, Button, Space } from 'antd';
 import "../components/Contact.css";
 const layout = {
   labelCol: {
@@ -23,57 +23,40 @@ const validateMessages = {
 };
 /* eslint-enable no-template-curly-in-string */
 
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyhNxMos2ipjVhT7xtbmsMjEu9SFpvFCmV0bBp_FMhEf38LSEb4cB7l_onDsTtpWQl_bQ/exec'
+const form = document.forms['submit-to-google-sheet']
 
+const Contact = () => {
 
-const Contact=()=>{
-    const onFinish = (values) => {
-        console.log(values);
-    
-      };
-return(
-  <>
-  <Space direction="vertical" size="large">
-  
-  <div className="Contact_title" >Get IN Touch</div>
-    <div className="form">
-     <Form {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>
-      <Form.Item
-        name={['user', 'name']}
-        label="Name"
-        rules={[
-          {
-            required: true,
-          },
-        ]}
-      >
-        <Input />
-      </Form.Item>
-      <Form.Item
-        name={['user', 'email']}
-        label="Email"
-        rules={[
-          {
-            type: 'email',
-            required:true,
-          },
-        ]}
-      >
-        <Input />
-      </Form.Item>
-     
-      
-      <Form.Item name={['user', 'message']} label="Message">
-        <Input.TextArea />
-      </Form.Item>
-      <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
-        <Button type="primary" htmlType="submit" >
-          Submit
-        </Button>
-      </Form.Item>
-    </Form>
+  const addEventListener = e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  };
+  /*
+  const SubmitForm = event => {
+    event.preventDefault();
+    console.log("Formdata", FormState);
+    axios.post("https://silent-auction-kb.herokuapp.com/api/auth/register", FormState, {withCredentials: true})
+    .then(res => {
+        console.log(res);
+        history.push("/login");
+      })
+      .catch(err => {
+          console.log("invalid login.", err);
+      })    
+}*/
+  return (
+    <div>
+
+      <Form name="submit-to-google-sheet" >
+        <input name="email" type="email" placeholder="Email" required />
+        <input name="firstName" type="text" placeholder="First Name" />
+        <input name="lastName" type="text" placeholder="Last Name" />
+        <button type="submit" onClick={addEventListener}>Send</button>
+      </Form>
     </div>
-    </Space>
-    </>
-)
+  )
 }
 export default Contact;

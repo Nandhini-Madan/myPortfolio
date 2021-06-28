@@ -21,11 +21,23 @@ margin-left: 7%;
 .ant-menu.ant-menu-dark{
     color: rgba(255, 255, 255, 0.65);
     background: teal;
+    
 }
 .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
     background-color: #1890ff;
+    background: teal;
 }
 
 .ant-layout-sider-children{
     width:fit-content;
+}
+.ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub {
+   
+    background: teal;
+}
+.ant-menu .ant-menu-dark{
+background: teal;
+}
+.ant-menu{
+    background: teal;
 }

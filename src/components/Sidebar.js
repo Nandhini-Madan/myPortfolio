@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link,useHistory } from 'react-router-dom'
 import { Typography, Menu, Button } from 'antd';
 import { Avatar, Space } from 'antd';
 import {
@@ -14,10 +14,18 @@ import {
 } from '@ant-design/icons';
 import LinkedIn from "../assets/linkedin.png";
 import '../components/Sidebar.css';
+
 const { Title } = Typography;
 
 
 const Sidebar = () => {
+    let history = useHistory();
+    const hire_me=()=>{
+    history.push({
+      pathname: '/contact',
+
+    });
+    }
     return (
         <div className="sideBar_container">
             <Avatar
@@ -53,14 +61,21 @@ const Sidebar = () => {
                     <Menu.Item key="3" icon={<UploadOutlined />}>
                         <Link to="/Projects" className="Menu_icon">Projects</Link>
                     </Menu.Item>
-                    <Menu.Item key="4" icon={<UploadOutlined />}>
+                    {
+                        /**
+                         * //Removing because of less time and I will soon update it 
+                         *   <Menu.Item key="4" icon={<UploadOutlined />}>
                         <Link to="/Blog" className="Menu_icon">Blog</Link>
                     </Menu.Item>
+                         */
+                    }
+                  
                     <Menu.Item key="5" icon={<MailFilled />}>
                         <Link to="/Contact" className="Menu_icon">Contact</Link>
                     </Menu.Item>
                     <br></br>
-                    <Button className="hire_me" type="primary" icon={<UpSquareOutlined />} > Hire Me</Button>
+                    <Button className="hire_me" type="primary" icon={<UpSquareOutlined />}
+                    onClick={hire_me} > Hire Me</Button>
                 </Menu>
                 <br></br>
                 <hr></hr>
