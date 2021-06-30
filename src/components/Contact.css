@@ -15,3 +15,15 @@
 .ant-space-vertical{
     display: flex;
 }
+
+.contactForm{
+    display: flex;
+    justify-content: center;
+    margin:5%;
+
+}
+
+.ant-space {
+    display: inline-flex;
+    flex-direction: column;
+}

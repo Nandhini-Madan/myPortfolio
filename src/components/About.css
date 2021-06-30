@@ -15,3 +15,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+.ant-menu.ant-menu-dark{
+background-color: teal;
+background: teal;
+}
