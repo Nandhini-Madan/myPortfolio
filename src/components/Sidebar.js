@@ -3,12 +3,9 @@ import { Link,useHistory } from 'react-router-dom'
 import { Typography, Menu, Button } from 'antd';
 import { Avatar, Space } from 'antd';
 import {
-   
     MenuFoldOutlined,
     UserOutlined,
-   
     UploadOutlined,
- 
     MailFilled,
     UpSquareOutlined
 } from '@ant-design/icons';
@@ -16,8 +13,6 @@ import LinkedIn from "../assets/linkedin.png";
 import '../components/Sidebar.css';
 
 const { Title } = Typography;
-
-
 const Sidebar = () => {
     let history = useHistory();
     const hire_me=()=>{

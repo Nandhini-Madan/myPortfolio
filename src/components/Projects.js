@@ -20,10 +20,11 @@ const Projects = () => {
          >
             <Meta title="Merchant Marketplace" description=" A website designed for seller to post there unique products. So the customer can order there products from home" />
             <a
-            href=""
+            href="https://github.com/Nandhini-Madan/PT17_merchant-marketplace-a-fe"
             >
                View code
             </a>
+            <Paragraph>HI</Paragraph>
          </Card>
 
          <Card
