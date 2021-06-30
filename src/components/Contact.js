@@ -1,6 +1,7 @@
 import React from "react";
 import { Form, Input, Button, Space,Typography} from 'antd';
 import "../components/Contact.css";
+/*
 const layout = {
   labelCol: {
     span: 8,
@@ -8,9 +9,9 @@ const layout = {
   wrapperCol: {
     span: 16,
   },
-};
+};*/
 /* eslint-disable no-template-curly-in-string */
-
+/*
 const validateMessages = {
   required: '${label} is required!',
   types: {
@@ -20,7 +21,7 @@ const validateMessages = {
   number: {
     range: '${label} must be between ${min} and ${max}',
   },
-};
+};*/
 /* eslint-enable no-template-curly-in-string */
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyhNxMos2ipjVhT7xtbmsMjEu9SFpvFCmV0bBp_FMhEf38LSEb4cB7l_onDsTtpWQl_bQ/exec'
