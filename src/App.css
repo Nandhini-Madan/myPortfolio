@@ -22,3 +22,28 @@
 .ant-menu.ant-menu-dark{
     background: teal;
 }
+.Footer{
+display: flex;
+justify-content: center;
+}
+.ant-layout-footer {
+    padding: 24px 50px;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background: teal;
+}
+
+@media only screen and (max-width: 600px) {
+    .app{
+        display: flex;
+        justify-content: center;
+        background-color: tomato;
+        color:tomato
+    }
+}
