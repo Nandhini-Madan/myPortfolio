@@ -8,7 +8,6 @@ import { useHistory } from 'react-router-dom';
 import reactPic from '../assets/physics.png';
 import silentAuction from "../../src/assets/silentAuction.jpg";
 import PotluckPlanner from "../../src/assets/postgres.jpg";
-
 const { Title, Paragraph } = Typography;
 const { Meta } = Card;
 
