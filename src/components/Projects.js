@@ -7,7 +7,7 @@ import silentAuction from "../../src/assets/silentAuction.jpg";
 import PotluckPlanner from "../../src/assets/postgres.jpg";
 import MerchantMarket from "../../src/assets/MerchantMarket.png"
 const { Meta } = Card;
-const { Title ,Paragraph} = Typography;
+const { Title } = Typography;
 const Projects = () => {
    return (
       <>
