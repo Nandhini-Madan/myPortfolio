@@ -12,6 +12,7 @@ import {
 import LinkedIn from "../assets/linkedin.png";
 import Gmail from "../assets/gmail.png";
 import '../components/Sidebar.css';
+import myPic from "../../src/assets/nandy.jpg"; 
 
 const { Title } = Typography;
 const Sidebar = () => {
@@ -24,10 +25,13 @@ const Sidebar = () => {
     }
     return (
         <div className="sideBar_container">
-            <Avatar src={Gmail}
+            <div className="titleContainer">
+            <Avatar src={ myPic}
                 size={{ sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}/>
             <Title level={2}>Nandhini Devi Madan</Title>
             <Title level={4}>Full Stack Developer</Title>
+            </div>
+            
 
             <div className="icon_container">
                 <a href="https://www.linkedin.com/in/nandhinimadan/">

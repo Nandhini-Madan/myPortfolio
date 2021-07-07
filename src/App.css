@@ -1,7 +1,16 @@
 .App{
     display: flex;
     padding-right: 20px;
+   
       
+}
+@media only screen and (max-width: 600px) {
+    .App{
+      
+        display:block;
+        justify-content: center;  
+    }
+  
 }
 
 .slider{
@@ -14,11 +23,37 @@
     background-color: teal;
     height: 100%;
 }
-
+.ant-layout-sider .ant-layout-sider-dark .slider{
+    display: flex;
+}
 .ant-layout-sider{
     background: teal;
+   
+}
+@media screen and (max-width:600px) {
+   .ant-layout-sider{
+    display: flex;
+    background-color: tomato;
+   }
    
 }
 .ant-menu.ant-menu-dark{
     background: teal;
 }
+.Footer{
+display: flex;
+justify-content: center;
+}
+.ant-layout-footer {
+    padding: 24px 50px;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background: teal;
+}
+

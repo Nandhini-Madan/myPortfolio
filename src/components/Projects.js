@@ -12,6 +12,8 @@ const Projects = () => {
    return (
       <>
       <Title level={2}>Recent Projects</Title>
+      <br></br>
+      <br></br>
       <div className="projectContainer">    
          <Card
             hoverable
@@ -24,7 +26,6 @@ const Projects = () => {
             >
                View code
             </a>
-            <Paragraph>HI</Paragraph>
          </Card>
 
          <Card
