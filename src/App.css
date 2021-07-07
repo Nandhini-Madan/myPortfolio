@@ -1,7 +1,16 @@
 .App{
     display: flex;
     padding-right: 20px;
+   
       
+}
+@media only screen and (max-width: 600px) {
+    .App{
+      
+        display:block;
+        justify-content: center;  
+    }
+  
 }
 
 .slider{
@@ -14,9 +23,18 @@
     background-color: teal;
     height: 100%;
 }
-
+.ant-layout-sider .ant-layout-sider-dark .slider{
+    display: flex;
+}
 .ant-layout-sider{
     background: teal;
+   
+}
+@media screen and (max-width:600px) {
+   .ant-layout-sider{
+    display: flex;
+    background-color: tomato;
+   }
    
 }
 .ant-menu.ant-menu-dark{
@@ -39,11 +57,3 @@ justify-content: center;
     background: teal;
 }
 
-@media only screen and (max-width: 600px) {
-    .app{
-        display: flex;
-        justify-content: center;
-        background-color: tomato;
-        color:tomato
-    }
-}
